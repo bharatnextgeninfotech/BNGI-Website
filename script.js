@@ -1,3 +1,7 @@
+var loader = document.getElementById("preloder");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
 document.querySelector(".menu-toggle").addEventListener("click", function () {
   document.querySelector("nav ul").classList.toggle("menu-open");
 });
