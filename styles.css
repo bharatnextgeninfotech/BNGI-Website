@@ -235,7 +235,7 @@ button:hover {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 78px;
+    top: 100px;
     left: 0;
     width: 96.2%;
     background-color: rgba(0, 0, 0, 0.7);
