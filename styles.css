@@ -53,10 +53,11 @@ nav {
 ul {
   position: absolute;
   right: 0;
+  top: 0;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   display: flex;
-  border-radius: 10px;
+  list-style: none;
 }
 
 .logo img {
@@ -64,20 +65,13 @@ ul {
 }
 
 ul li {
-  list-style: none;
   text-align: center;
-  display: block;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-ul li:last-child {
-  border-right: none;
 }
 
 ul li a {
   text-decoration: none;
-  padding: 0 20px;
   display: block;
+  padding: 20px;
 }
 
 ul li a .icon {
@@ -185,6 +179,7 @@ ul li a:hover .name span {
     border-color: initial;
   }
 }
+
 button {
   width: 200px;
   padding: 15px 0;
@@ -219,4 +214,70 @@ button:hover span {
 
 button:hover {
   border: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  color: #fff;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  ul.menu-open {
+    display: flex;
+  }
+
+  ul li {
+    border-right: none;
+    margin-bottom: 10px;
+  }
+
+  ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  ul li a {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .company-name {
+    font-size: 36px;
+    white-space: normal;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  button {
+    width: 160px;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  .center-content {
+    top: 40%;
+  }
 }
