@@ -99,7 +99,7 @@ ul li a .icon .fa {
 }
 
 ul li a:hover .icon .fa:last-child {
-  color: #ffd700;
+  color: #ffa500;
 }
 
 ul li a:hover .icon .fa {
@@ -129,7 +129,7 @@ ul li a .name span::before {
   top: -100%;
   left: 0;
   width: 100%;
-  color: #ffd700;
+  color: #ffa500;
 }
 
 ul li a:hover .name span {
