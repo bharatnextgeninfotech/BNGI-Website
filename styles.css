@@ -244,11 +244,12 @@ button:hover {
     position: absolute;
     top: 100px;
     left: 0;
-    width: 96.2%;
+    width: 96.1%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 10px;
     z-index: 999;
+    overflow: hidden;
   }
 
   ul.menu-open {
